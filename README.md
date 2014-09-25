@@ -1,7 +1,7 @@
 Arduino temperature & humidity monitor/logger
 =============================================
 
-This Arduino code can be used to monitor the current temperature and humidity from a DHT sensor ([DHT22]<https://www.google.com/#q=DHT22> / [DHT11]<https://www.google.com/#q=DHT11>) and log the data to an SD card. The program also relies on a [DS1307 RTC](https://www.google.com/#q=DS1307+RTC) connected over I2C for time keeping.
+This Arduino code can be used to monitor the current temperature and humidity from a DHT sensor ([DHT22](https://www.google.com/#q=DHT22) / [DHT11](https://www.google.com/#q=DHT11)) and log the data to an SD card. The program also relies on a [DS1307 RTC](https://www.google.com/#q=DS1307+RTC) connected over I2C for time keeping.
 
 The data is read and recorded on the SD card every 60 seconds. While the data is read & written, an LED connected to D9 is also flashed to indicate activity.
 
@@ -15,7 +15,7 @@ If you want to use this code in your own project, make sure you correctly set th
 #define LEDPIN 9
 ```
 
-The code also relies on the following libraries:
+The code uses the following libraries:
 
     - DHTlib by Adafruit Industries
     - RTCLib by JeeLabs
